@@ -9,22 +9,17 @@ class Formatter {
   }
 
   static titleize(string) {
-    let splited = string.split(' ');
-    let exceptionList = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
-
-    splited.map( (x, y) => {
-      if (y == 0) return x[0].toUpperCase() + x.slice(1); 
-      else if (exceptionList.includes(x)) return x;
-      else return x[0].toUpperCase() + x.slice(1);
-    }).join(' ');
-    return splited;
-  }
+    let newString = string.split(' ');
+    let exceptions = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
+//        console.log(newString);
+  
+    let result = newString.map(
+      function(e, i) {
+        if(i == 0) { return Formatter.capitalize(e) }
+        else if(exceptions.includes(e)) { return e }
+        return Formatter.capitalize(e);
+      } 
+    ).join(' '); // end map
+    return result;
+    }
 }
-
-// parseString = parseString.map(function(elt, index) {
-//   if (index == 0) return elt[0].toUpperCase() + elt.slice(1);
-//   else if (ignoreThese.includes(elt)) return elt;
-//   else return elt[0].toUpperCase() + elt.slice(1);
-// }).join(' ’)
-// return parseString;
-// }
