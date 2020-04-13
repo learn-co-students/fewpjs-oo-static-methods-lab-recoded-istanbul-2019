@@ -9,6 +9,14 @@ class Formatter {
   static titleize(str){
     let nonCap = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
     let arr = str.split(" ");
-    return arr.filter(el => capitalize(el))
+    
+    for(const el of arr){
+      for(const e of nonCap){
+        if(el != e){
+          return capitalize(el);
+        }
+      }
+    }
+    
   }
 }
