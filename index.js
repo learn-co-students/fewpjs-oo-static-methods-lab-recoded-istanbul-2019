@@ -14,7 +14,7 @@ class Formatter {
     for(const el of arr){
       for(const e of nonCap){
         if(el != e){
-          return el.charAt(0).toUpperCase() + el.slice(1);
+         el.charAt(0).toUpperCase() + el.slice(1);
         }
       }
     }
