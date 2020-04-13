@@ -13,11 +13,11 @@ class Formatter {
     empty.push(arr[0].charAt(0).toUpperCase() + arr[0].slice(1));
     
     for(const el of arr){
-      for(const e of nonCap){
-        if(el != e){
+      
+        if(el != nonCap){
          empty.push(el.charAt(0).toUpperCase() + el.slice(1))
         }
-      }
+      
     }
     return empty.join(" ");
   }
