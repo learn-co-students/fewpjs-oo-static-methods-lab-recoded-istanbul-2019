@@ -6,8 +6,9 @@ class Formatter {
   static sanitize(str2){
     return str2.replace( /[^A-Za-z0-9 '-]/gi, "");
   }
-  static titleize(arr){
+  static titleize(str){
     let nonCap = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
+    let arr = str.split(" ");
     return arr.filter(el => capitalize(el).indexOf(!nonCap))
   }
 }
