@@ -18,6 +18,6 @@ class Formatter {
         }
       }
     }
-    
+    return arr.join(" ");
   }
 }
