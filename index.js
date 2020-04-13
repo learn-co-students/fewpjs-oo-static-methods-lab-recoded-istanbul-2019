@@ -14,7 +14,7 @@ class Formatter {
     
     for(let i = 1; i<arr.length; i++){
         if(arr[i] != nonCap){
-         empty.push(el.charAt(0).toUpperCase() + el.slice(1))
+         empty.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
         }
       
     }
