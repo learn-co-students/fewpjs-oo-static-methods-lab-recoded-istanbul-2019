@@ -10,7 +10,6 @@ class Formatter {
     let nonCap = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
     let arr = str.split(" ");
 
-    // arr[0]=arr[0].charAt(0).toUpperCase() + arr[0].slice(1);
     arr[0] = this.capitalize(arr[0]);
     
     for(let i = 1; i<arr.length; i++){
