@@ -7,6 +7,6 @@ class Formatter {
     return str2.replace( /[^A-Za-z0-9 '-]/gi, "");
   }
   static titleize(){
-    
+    let nonCap = []
   }
 }
