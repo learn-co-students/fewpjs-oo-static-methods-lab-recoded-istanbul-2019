@@ -8,6 +8,6 @@ class Formatter {
   }
   static titleize(arr){
     let nonCap = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
-    arr.filter()
+    arr.filter(el => el.toLowerCase)
   }
 }
