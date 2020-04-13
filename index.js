@@ -10,7 +10,7 @@ class Formatter {
     let nonCap = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"];
     let arr = str.split(" ");
     let empty = [];
-    empty.push(arr[0].charAt(0).toUpperCase() + arr[0].slice(1);
+    empty.push(arr[0].charAt(0).toUpperCase() + arr[0].slice(1));
     
     for(const el of arr){
       for(const e of nonCap){
@@ -19,6 +19,6 @@ class Formatter {
         }
       }
     }
-    return arr.join(" ");
+    return empty.join(" ");
   }
 }
