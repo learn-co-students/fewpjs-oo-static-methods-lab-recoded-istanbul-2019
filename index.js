@@ -13,7 +13,7 @@ class Formatter {
     empty.push(arr[0].charAt(0).toUpperCase() + arr[0].slice(1));
     
     for(let i = 1; i<arr.length; i++){
-        if(!nonCap.find(el => el == arr[i])){
+        if(nonCap.find(el => el == arr[i])){
          empty.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
         }
     }
