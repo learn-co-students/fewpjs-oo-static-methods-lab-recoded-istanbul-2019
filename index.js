@@ -15,7 +15,7 @@ class Formatter {
     
     for(let i = 1; i<arr.length; i++){
         if(!nonCap.find(el => el == arr[i])){
-         arr[i]=arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+         arr[i]=this.capitalize(arr[i]);
         }
     }
     return arr.join(" ");
