@@ -16,7 +16,7 @@ class Formatter {
         if(arr[i] != nonCap){
          empty.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
         }
-      
+      return arr[i].toLowerCase();
     }
     return empty.join(" ");
   }
