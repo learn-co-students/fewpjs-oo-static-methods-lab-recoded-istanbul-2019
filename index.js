@@ -13,7 +13,7 @@ class Formatter {
     for(const el of arr){
       for(const e of nonCap){
         if(el != e){
-          return capitalize(el);
+          return el.charAt(0).toUpperCase() + el.slice(1);
         }
       }
     }
